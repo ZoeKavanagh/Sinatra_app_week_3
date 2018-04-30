@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/cat' do
-erb(:index)
 
-
+ @name = ["Amigo", "Oscar", "Sam"].sample
+ erb :index
 end
